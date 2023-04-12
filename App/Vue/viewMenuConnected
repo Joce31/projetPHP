@@ -1,0 +1,27 @@
+<?php
+    //Test si connecté 
+    if(isset($_SESSION['connected'])){
+?>  
+    <!-- connecté -->
+    <div id="navbar">
+        <li><a href="./home">Accueil</a></li>
+        <li><a href="./profil">Mon profil</a></li>
+        <li><a href="./compte">Mon compte</a></li>
+        <li><a href="./planning">Planning</a></li>
+        <li><a href="./concept">Les concepts</a></li>
+        <li><a href="./devis">Mes devis</a></li>
+    </div>
+<?php
+    }
+    //Test sinon non connecté
+    else{
+?>
+    <!-- déconnecté -->
+    <div id="navbar">
+        <li><a href="./">Home</a></li>
+        <li><a href="./userAdd">Inscription</a></li>
+        <li><a href="./connexion">Connexion</a></li>
+    </div>
+<?php
+    }
+?>

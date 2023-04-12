@@ -1,0 +1,580 @@
+body{
+    background-color: #1B252F;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fa-bars:before{
+    display: none;
+}
+
+#burger{
+    display: none;
+}
+
+/* .menu_mobile{
+    display: none;
+} */
+#croix1{
+    display: none;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 60px;
+    color: #FFB001;
+    
+}
+#reseaux{
+    padding-left: 130px;
+}  
+#logo_footer{
+    width: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+}       
+.newsletter_bandeau{
+
+    align-content: space-around;
+    border-radius: 20px;
+}      
+.article_news{
+    border: #FFB001 solid;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+
+
+}                           
+h2{
+    color: aliceblue;
+    display: flex;
+    justify-self: center;
+}   
+.s_abonner{
+    padding: 20px;
+}
+#card_ent {
+    
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+.card_image1,
+.card_image2 {
+    display: inline-block; 
+    margin-right: 20px;
+    
+}
+
+.card_image1 img,
+.card_image2 img{
+    border-radius: 40px;
+}
+
+.card_image1 img,
+.card_image2 img {
+    height: 500px;
+    width: 750px;
+ 
+}
+#menu{
+    padding-right: 120px;
+}
+.card_image1 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .card_image1 .user_add {
+    width: 72px;
+    height: 72px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 20px 15px #FFB001;
+
+  }
+  .card_image1 .user_add1 {
+    width: 32px;
+    height: 32px;
+    position:absolute;
+    top: 56%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+  
+  }
+  .card_image1 .user_add2 {
+    width: 72px;
+    height: 72px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 20px 15px #FFB001;
+
+  }
+
+.card_image1 p{
+    background-color: #0e0e0e;
+    color: #FFB001;
+    text-align: center;
+    /* padding-left: 60px; */
+    width: 40%;
+    border-radius: 10px;
+    font-size: x-large;
+    position: absolute;
+    top:0PX;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#bienvenue{
+    text-align: center;
+    writing-mode: vertical-rl; /* Cette propriété spécifie l'orientation du texte à la verticale */
+    text-orientation: upright; /* Cette propriété spécifie l'orientation des caractères du texte (droite ou gauche) */
+    font-size: 30px; /* Changer la taille de police à votre préférence */
+    color:#FFB001; 
+    padding-right: 20px;
+}
+
+#card_body{
+    display: none;
+    width: 200px;
+    height: 450px;
+    padding-right: 100px;
+    padding-left: 90px;
+}
+
+/* #card:before{
+    content: url(../update_maison_27_02/images/crosscirclelinear_106172.ico);
+
+} */
+/* .form1:before{
+    content:url(../update_maison_27_02/images/crosscirclelinear_106172.ico)
+} */
+
+
+
+
+                                        /*barre de navigation grid*/
+                                        
+nav {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 3, 2fr;
+    grid-template-areas: "card logos menu"
+"search search search";
+    justify-content: space-around;
+}
+nav a {
+    text-decoration: none;
+}
+
+#card {
+    grid-area: card;
+}
+
+.logos {
+    grid-area: logos;
+    top: 0;
+    left: 0;
+  
+}
+li{
+
+    list-style: none;
+}
+
+.menu{
+    padding-top: 5px;
+    grid-area: menu;
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section {
+    grid-area: search;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon {
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+                                                                /*css recherche*/
+.container {
+    --size-button: 40px;                                                           
+    display: flex;
+    }
+.input {
+    padding-left: var(--size-button);
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    outline: none;
+    width: 100px;
+    transition: all ease 0.3s;
+    background-color: #FFB001;
+    box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+    border-radius: 50px;
+    cursor: pointer;
+    }
+                                                                
+    .input:focus,
+    .input:not(:invalid) {
+    width: 120px;
+    cursor: text;
+    box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+    }
+                                                                
+    .input:focus + .icon,
+    .input:not(:invalid) + .icon {
+    pointer-events: all;
+    cursor: pointer;
+                                                                
+    }
+                                                                
+    .container .icon {
+    top: 100px;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+    }
+                                                                
+    .container .icon svg {
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    }
+                                                            /*responsive*/
+    @media (max-width: 750px) {
+        #croix1{
+            display: block;
+        }
+        
+    .logo_user{
+        padding-right: 30px;
+
+    }
+
+    .article_news{
+        border: #FFB001 solid;
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .active {
+        display: block;
+        border-radius: 20px;
+        width: 2px;
+        z-index: 999;
+    }
+    
+    .card_image1 img,
+    .card_image2 img{
+            width: 350px;
+            height: 200px;
+
+        border-radius: inherit;
+        }
+    
+    /* #menu_mobile{
+        display: none;
+    }
+    #croix{
+        display: block;
+    } */
+    #card img{
+        display: block;
+        padding-right: 100px;
+    }
+    .menu img{
+        display: block;
+        padding-left: 100px;
+        padding-bottom: 20px;
+    }
+    #burger{
+        display: block;
+        position: absolute;
+        filter: invert(1); 
+
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .fa-bars:before{
+        display: flex;
+        padding-left: 160px;
+
+
+    }
+
+    .a1{
+        display: flex;
+        text-decoration: none; 
+
+        color:#FFB001;
+        font-size: 18 px;
+        letter-spacing: .5px;
+        cursor: pointer;
+    }
+    .container{
+        padding-top: 25px;
+        height: 0px;
+        justify-content: center;
+    }
+}
+    
+    @media (max-width: 1400px) {
+        /* #burger{
+            position:relative;
+            filter: invert(1); 
+            width: 96px;
+        } */
+    #bienvenue{
+        text-align: center;
+        writing-mode: inherit;
+        font-size: 30px; /* Changer la taille de police à votre préférence */
+        color:#FFB001; 
+        }
+    .card_image1 img,
+    .card_image2 img{
+        width: 600px;
+        height: 200px;
+
+    }
+    #card_ent {
+        padding-top: 150px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu{
+            display: flex;
+
+    }
+
+    #card{
+    position:relative;
+    }
+    .a1{
+        position: relative;
+        text-decoration: none; 
+        color:#FFB001;
+        font-size: 18 px;
+        letter-spacing: .5px;
+        padding: 0 21px;
+        cursor: pointer;
+    }
+    .menu li {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+
+    #menu{
+        padding-right: 120px;
+    }
+    .container{
+        padding-left: 20px;
+    }
+}
+
+                                                        /*design nav*/
+.a1{
+    position: relative;
+    text-decoration: none; 
+    color:#FFB001;
+    font-size: 18 px;
+    letter-spacing: .5px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.a1:before,
+.a1:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: #FFB001;
+    transition: .5s;   
+                                                        
+}
+.a1:after{
+    left: 0;
+    bottom: -10px;
+}
+.a1:before{
+    right: 0;
+    top:-10px;
+}
+.a1:hover:after,
+.a1:hover:before{
+    width: 100%;
+    
+}
+a.a2{
+    color: inherit;
+}
+
+                                                                /*card  user*/
+
+#card{
+    display: none;
+}
+
+                                                    /* css card user*/
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    }
+                                                    
+    .form input {
+    height: 15px;
+    outline: none;
+    border: 2px solid orange;
+    background: transparent;
+    padding: 20px 10px;
+    border-radius: 5px;
+    transition: .5s;
+    color: white;
+    font-size: 15px;
+    }
+                                                    
+    .form input:focus {
+    background: orange;
+    }
+                                                    
+    .form button {
+    width: 100%;
+    color: white;
+    transition: .5s;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    height: 45px;
+    border-radius: 5px;
+    background: orange;
+    align-self: flex-end;
+    }
+                                                            /*formulaire d'inscription*/ 
+                                                            
+                                                            .form1 {
+                                                                width: 200px;
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                gap: 10px;
+                                                                background: #1e1e1e;
+                                                                padding: 15px;
+                                                                border-radius: 30px;
+                                                                color: white;
+                                                                text-align: center;
+
+                                                                flex-wrap: wrap;
+                                                                }
+                                                                                                                
+                                                                .form1 input {
+
+                                                                outline: none;
+                                                                border: 2px solid orange;
+                                                                background: transparent;
+                                                                padding: 20px 10px;
+                                                                border-radius: 5px;
+                                                                transition: .5s;
+                                                                color: white;
+
+                                                                }
+                                                                                                                
+                                                                .form1 input:focus {
+                                                                background: orange;
+                                                                }
+                                                                                                                
+                                                                .form1 button {
+                                                                width: 100%;
+                                                                color: white;
+                                                                transition: .5s;
+                                                                font-size: 20px;
+                                                                outline: none;
+                                                                border: none;
+                                                                height: 45px;
+                                                                border-radius: 5px;
+                                                                background: orange;
+                                                                align-self: flex-end;
+                                                                }
+                                                                
+                                                                
+                                                                /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+  
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+                                                            
